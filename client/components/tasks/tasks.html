@@ -1,0 +1,30 @@
+<template name='tasks'>
+	{{> addTaskForm }}
+	<div style='margin-top:15px;'>
+		{{#each tasks}}
+			<table>
+				<tbody>
+					{{> task }}
+				</tbody>
+			</table>
+		{{else}}
+			<div>No tasks added so far...</div>
+		{{/each}}
+	</div>
+</template>
+
+<template name='addTaskForm'>
+	<form id='add-task-form'>
+		<input type='text' name='message' />
+		<input type='text' name='date' placeholder='DD/MM/YYYY' />
+		<input type='submit' value='Add task' />
+	</form>
+</template>
+
+<template name='task'>
+	<tr class='task'>
+		<td>{{index}}</td>
+		<td>{{message}}</td>
+		<td>{{targetDate}}</td>
+	</tr>
+</template>
