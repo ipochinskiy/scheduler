@@ -1,11 +1,11 @@
-Template.tasks.onCreated(function () {
+Template.tasksList.onCreated(function () {
 	var self = this;
 	self.autorun(function () {
 		self.subscribe('tasks');
 	});
 });
 
-Template.tasks.helpers({
+Template.tasksList.helpers({
 	tasks: function () {
 		var i = 0;
 		return Tasks.fetch().map(function(entry) {
@@ -18,10 +18,10 @@ Template.tasks.helpers({
 	}
 });
 
-Template.tasks.events({
+Template.tasksList.events({
 	'submit #add-task-form': function (event) {
 		event.preventDefault();
 
-		// Meteor.call('task.add', ...);
+		Meteor.call('task.add');
 	}
 });

@@ -1,1 +1,1 @@
-Router.route('/', { name: 'tasks' });
+Router.route('/', { name: 'tasksList' });
