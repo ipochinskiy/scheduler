@@ -1,0 +1,16 @@
+<template name='header'>
+	<div class='header'>
+		<div class='navbar'>
+			<a class='navbar-brand' href='/'>Scheduler</a>
+			<ul class='navbar-list'>
+				<li class='navbar-item'><a href='/'>Task list</a></li>
+				<li class='navbar-item'><a href='/timeline/month'>Month view</a></li>
+				<li class='navbar-item'><a href='/timeline/week'>Week view</a></li>
+				<li class='navbar-item'><a href='/timeline/day'>Day view</a></li>
+			</ul>
+			<div class='right-button'>
+				{{> addTask}}
+			</div>
+		</div>
+	</div>
+</template>

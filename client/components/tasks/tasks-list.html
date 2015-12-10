@@ -1,14 +1,11 @@
 <template name='tasksList'>
-	{{> addTaskForm }}
-	<div style='margin-top:15px;'>
-		{{#each tasks}}
-			<table>
-				<tbody>
-					{{> taskItemShort }}
-				</tbody>
-			</table>
-		{{else}}
-			<div>No tasks added so far...</div>
-		{{/each}}
-	</div>
+	{{#each tasks}}
+		<table>
+			<tbody>
+				{{> taskItemShort }}
+			</tbody>
+		</table>
+	{{else}}
+		<div>No tasks added so far...</div>
+	{{/each}}
 </template>
