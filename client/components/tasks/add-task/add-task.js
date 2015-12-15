@@ -22,7 +22,6 @@ Template.addTask.events({
 
 Template.addTaskForm.events({
 	'click .window-overlay': function(event) {
-		event.preventDefault();
 		if (event.target.getAttribute('class') === 'window-overlay') {
 			Session.set('showAddTaskForm', false);
 		}
