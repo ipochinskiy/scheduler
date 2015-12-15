@@ -1,9 +1,24 @@
 <template name='addTaskForm'>
 	<div class='window-overlay'>
 		<div class='add-task-window'>
-			<form id='add-task-form'>
-				<input type='text' name='message' />
-				<input type='text' name='date' placeholder='DD/MM/YYYY' />
+			<h3>Add new task</h3>
+			<form class='add-task-form'>
+				<div class='new-task-description'>
+					<input type='text' id='description' name='description' placeholder='enter task description' />
+				</div>
+				<div class='new-task-dates'>
+					<input type='date' class='date-picker' name='startDate' placeholder='here will be a datepicker' />
+					<input type='date' class='date-picker' name='endDate' placeholder='here will be a datepicker' />
+				</div>
+				<div class='new-task-duration'>
+					<input type='date' class='time-picker' name='duration' placeholder='here will be a timepicker' />
+				</div>
+				<div class='new-task-all-day'>
+					<input type='checkbox' id='allDay' name='allDay' value='allDay'>
+					<label for='allDay'>
+						The task will last the whole day
+					</label>
+				</div>
 				<input type='submit' value='Add task' />
 			</form>
 		</div>
