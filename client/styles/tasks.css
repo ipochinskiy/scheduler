@@ -1,12 +1,14 @@
 .add-task-window {
 	margin: 120px auto auto auto;
-	width: 300px;
-	height: 200px;
+	max-width: 500px;
+	padding-bottom: 8px;
+	height: auto;
 	background: #f5f5f5 none repeat scroll 0 0;
 }
 
 .add-task-window h3 {
-	padding: 10px 15px;
+	margin-bottom: 0;
+	padding: 8px 15px 0;
 	text-align: center;
 }
 
@@ -16,6 +18,14 @@
 	display: block;
 }
 
+.add-task-form input {
+	padding: 2px;
+}
+
+.add-task-form label {
+	margin-top: 4px;
+}
+/*
 .add-task-form label {
 	font-size: 12px;
 }
@@ -34,4 +44,4 @@
 .new-task-dates input {
 	margin: 4px auto;
 	width: 70%;
-}
+}*/

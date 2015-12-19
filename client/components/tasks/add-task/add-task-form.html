@@ -3,15 +3,19 @@
 		<div class='add-task-window'>
 			<h3>Add new task</h3>
 			<form class='add-task-form'>
-				<div class='new-task-description'>
-					<input type='text' id='description' name='description' placeholder='enter task description' />
+				<label for="description">Description</label>
+				<input type="text" id="description" class="form-control" placeholder="New task" aria-describedby="basic-addon1">
+
+				<label for="start-date">Start date</label>
+				<div class="input-group">
+					<input type="text" id="start-date" class="form-control" placeholder="DD/MM/YYYY" aria-describedby="basic-addon1">
+					<span class="input-group-addon" id="basic-addon1">calendar</span>
 				</div>
-				<div class='new-task-dates'>
-					<input type='date' class='date-picker' name='startDate' placeholder='here will be a datepicker' />
-					<input type='date' class='date-picker' name='endDate' placeholder='here will be a datepicker' />
-				</div>
-				<div class='new-task-duration'>
-					<input type='date' class='time-picker' name='duration' placeholder='here will be a timepicker' />
+
+				<label for="end-date">End date</label>
+				<div class="input-group">
+					<input type="text" id="end-date" class="form-control" placeholder="DD/MM/YYYY" aria-describedby="basic-addon2">
+					<span class="input-group-addon" id="basic-addon2">calendar</span>
 				</div>
 				<div class='new-task-all-day'>
 					<input type='checkbox' id='allDay' name='allDay' value='allDay'>
