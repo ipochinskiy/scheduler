@@ -1,0 +1,11 @@
+<template name='tasksList'>
+	{{#each tasks}}
+		<table>
+			<tbody>
+				{{> taskItemShort }}
+			</tbody>
+		</table>
+	{{else}}
+		<div>No tasks added so far...</div>
+	{{/each}}
+</template>

@@ -1,0 +1,30 @@
+<template name='addTaskForm'>
+	<div class='window-overlay'>
+		<div class='add-task-window'>
+			<h3>Add new task</h3>
+			<form class='add-task-form'>
+				<label for="description">Description</label>
+				<input type="text" id="description" class="form-control" placeholder="New task" aria-describedby="basic-addon1">
+
+				<label for="start-date">Start date</label>
+				<div class="input-group">
+					<input type="text" id="start-date" class="form-control" placeholder="DD/MM/YYYY" aria-describedby="basic-addon1">
+					<span class="input-group-addon" id="basic-addon1">calendar</span>
+				</div>
+
+				<label for="end-date">End date</label>
+				<div class="input-group">
+					<input type="text" id="end-date" class="form-control" placeholder="DD/MM/YYYY" aria-describedby="basic-addon2">
+					<span class="input-group-addon" id="basic-addon2">calendar</span>
+				</div>
+				<div class='new-task-all-day'>
+					<input type='checkbox' id='allDay' name='allDay' value='allDay'>
+					<label for='allDay'>
+						The task will last the whole day
+					</label>
+				</div>
+				<input type='submit' value='Add task' />
+			</form>
+		</div>
+	</div>
+</template>
