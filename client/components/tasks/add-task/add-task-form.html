@@ -7,15 +7,23 @@
 				<input type="text" id="description" class="form-control" placeholder="New task" aria-describedby="basic-addon1">
 
 				<label for="start-date">Start date</label>
-				<div class="input-group">
-					<input type="text" id="start-date" class="form-control" placeholder="DD/MM/YYYY" aria-describedby="basic-addon1">
-					<span class="input-group-addon" id="basic-addon1">calendar</span>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="DD/MM/YYYY" aria-describedby="txtStartDate">
+                    <span class="input-group-addon" id="txtStartDate">
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                        </button>
+                    </span>
 				</div>
 
 				<label for="end-date">End date</label>
 				<div class="input-group">
-					<input type="text" id="end-date" class="form-control" placeholder="DD/MM/YYYY" aria-describedby="basic-addon2">
-					<span class="input-group-addon" id="basic-addon2">calendar</span>
+					<input type="text" class="form-control" placeholder="DD/MM/YYYY" aria-describedby="txtEndDate">
+					<span class="input-group-addon" id="txtEnDate">
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                        </button>
+                    </span>
 				</div>
 				<div class='new-task-all-day'>
 					<input type='checkbox' id='allDay' name='allDay' value='allDay'>
