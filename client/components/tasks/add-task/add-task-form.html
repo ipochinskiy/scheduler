@@ -3,26 +3,35 @@
 		<div class='add-task-window'>
 			<h3>Add new task</h3>
 			<form class='add-task-form'>
-				<label for="description">Description</label>
-				<input type="text" id="description" class="form-control" placeholder="New task" aria-describedby="basic-addon1">
-
-				<label for="start-date">Start date</label>
 				<div class="input-group">
-					<input type="text" id="start-date" class="form-control" placeholder="DD/MM/YYYY" aria-describedby="basic-addon1">
-					<span class="input-group-addon" id="basic-addon1">calendar</span>
+					<label for="description">Description</label>
+					<input type="text" id="description" class="form-control" placeholder="New task" aria-describedby="basic-addon1">
 				</div>
 
-				<label for="end-date">End date</label>
 				<div class="input-group">
-					<input type="text" id="end-date" class="form-control" placeholder="DD/MM/YYYY" aria-describedby="basic-addon2">
-					<span class="input-group-addon" id="basic-addon2">calendar</span>
+					<div class="col-lg-6 left-column">
+						<label for="end-date">Start date</label>
+						<div class="input-group">
+							<input type="text" id="start-date" class="form-control" placeholder="DD/MM/YYYY – HH:MM" aria-describedby="basic-addon2">
+							<span class="input-group-addon" id="basic-addon2">date</span>
+						</div>
+					</div>
+					<div class="col-lg-6 right-column">
+						<label for="end-date">End date</label>
+						<div class="input-group">
+							<input type="text" id="end-date" class="form-control" placeholder="DD/MM/YYYY – HH:MM" aria-describedby="basic-addon4">
+							<span class="input-group-addon" id="basic-addon4">date</span>
+						</div>
+					</div>
 				</div>
-				<div class='new-task-all-day'>
+
+				<div class='input-group'>
 					<input type='checkbox' id='allDay' name='allDay' value='allDay'>
 					<label for='allDay'>
 						The task will last the whole day
 					</label>
 				</div>
+
 				<input type='submit' value='Add task' />
 			</form>
 		</div>

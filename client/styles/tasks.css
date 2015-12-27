@@ -13,9 +13,11 @@
 }
 
 .add-task-form {
-	justify-content: center;
 	padding: 0px 15px;
-	display: block;
+}
+
+.add-task-form .input-group {
+	width: 100%;
 }
 
 .add-task-form input {
@@ -25,23 +27,11 @@
 .add-task-form label {
 	margin-top: 4px;
 }
-/*
-.add-task-form label {
-	font-size: 12px;
+
+.add-task-form .left-column {
+	padding-left: 0px;
 }
 
-.add-task-form input {
-	font-size: 14px;
-	width: auto;
-	padding: 2px;
-	margin-top: 4px;
+.add-task-form .right-column {
+	padding-right: 0px;
 }
-
-.new-task-dates {
-	display: flex;
-}
-
-.new-task-dates input {
-	margin: 4px auto;
-	width: 70%;
-}*/
